@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: bad-pod
+  namespace: test-deployments
 spec:
   replicas: 1
   selector:
@@ -14,4 +15,4 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: docker.io/nginx:latest
+          image: registry.k8s.io/pause:3.9
