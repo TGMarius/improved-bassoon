@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: good-pod
+  name: bad-pod
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: good-pod
+      app: bad-pod
   template:
     metadata:
       labels:
-        app: good-pod
+        app: bad-pod
     spec:
       containers:
-        - name: pause
+        - name: nginx
           image: docker.io/nginx:latest
