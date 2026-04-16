@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: bad-pod
-  namespace: test-deployments
 spec:
   replicas: 1
   selector:
