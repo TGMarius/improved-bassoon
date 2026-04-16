@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
         - name: pause
-          image: registry.k8s.io/pause:3.9
+          image: ghcr.io/tgmarius/mirror/pause:3.9
